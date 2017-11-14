@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="frags :: header">
+    <meta charset="UTF-8" />
+    <title th:text="${title}"></title>
+</head>
+<body>
+
+<h1 th:text="${title}" />
+<ol>
+    <li th:each="movie : ${movies}" th:text=${movie}"></li>
+</ol>
+
+<form method="POST">
+    <input name="addMovie" type=test" />
+    <input type="submit"
+</form>
+</body>
+</html>
